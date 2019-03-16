@@ -1,33 +1,53 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* carousel fullscreen */
+.carousel-fullscreen .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* carousel fullscreen - vertically centered caption*/
+.carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+/* overlay for better readibility of the caption  */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+
+/* demo typography */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .display-1 {
+        font-size: 3.3rem;
+    }
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    .display-3 {
+        font-size: 2rem;
+    }
 }
