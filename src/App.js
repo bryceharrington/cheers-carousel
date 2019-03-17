@@ -16,12 +16,10 @@ class App extends Component {
     render() {
         return (
 	    <React.Fragment>
-              <main className="container">
                 <Cheers
                   active={this.state.active}
                   cheers={this.state.cheers}
                 />
-              </main>
             </React.Fragment>
         );
     }
