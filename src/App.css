@@ -1,14 +1,55 @@
+/**
+ * This CSS uses patterns for the background of the slides.
+ */
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+    border:none !important;
+}
+
+.carousel-item:nth-child(3n+1) {
+    background:
+    linear-gradient(63deg, #555 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #555 78%),
+    linear-gradient(63deg, transparent 34%, #555 38%, #555 58%, transparent 62%), 
+    #114 !important;
+    background-size: 16px 48px !important;
+}
+
+.carousel-item:nth-child(3n+2) {
+    background:
+    radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.1) 21%, rgba(255,255,255,.1) 34%, transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.1) 21%, rgba(255,255,255,.1) 34%, transparent 35%, transparent) 0 -50px  !important;
+    background-color: #114 !important;
+    background-size:25px 33px !important;
+}
+
+.carousel-item:nth-child(3n+3) {
+    background:
+    linear-gradient(324deg, #114 4%,   transparent 4%) -70px 43px,
+    linear-gradient( 36deg, #114 4%,   transparent 4%) 30px 43px,
+    linear-gradient( 72deg, #444 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, #444 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, #444 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, #444 7.5%, transparent 7.5%) 30px 23px,
+
+    linear-gradient(324deg, #114 4%,   transparent 4%) -20px 93px,
+    linear-gradient( 36deg, #114 4%,   transparent 4%) 80px 93px,
+    linear-gradient( 72deg, #444 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, #444 8.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, #444 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, #444 7.5%, transparent 7.5%) 80px 73px !important;
+    background-color: #114 !important;
+    background-size: 100px 100px !important;
 }
 
 /* carousel fullscreen */
 .carousel-fullscreen .carousel-inner .carousel-item {
     height: 100vh;
     min-height: 600px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* carousel fullscreen - vertically centered caption*/
