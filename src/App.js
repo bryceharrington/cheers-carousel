@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import Cheers from './components/cheers';
 import './App.css';
+import cheersData from './cheers.json';
 
 class App extends Component {
     state = {
         active: 0,
-        cheers: [
-            { id: 0, memo: "Thanks!", year: 2019, month: 1 },
-            { id: 1, memo: "Good work!", year: 2019, month: 2 },
-            { id: 2, memo: "Keep it up!", year: 2019, month: 3 },
-            { id: 3, memo: "I love your work.", year: 2019, month: 4 },
-        ]
+        cheers: cheersData,
+        images: [
+            'img/background0.png',
+            'img/background1.png',
+            'img/background2.png',
+            'img/background3.png',
+            'img/background4.png'
+            ]
     };
 
     render() {
@@ -19,6 +22,7 @@ class App extends Component {
                 <Cheers
                   active={this.state.active}
                   cheers={this.state.cheers}
+                  images={this.state.images}
                 />
             </React.Fragment>
         );

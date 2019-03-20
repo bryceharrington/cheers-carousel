@@ -1,0 +1,58 @@
+[
+    {
+        "amount": "10-25 USD", 
+        "id": 0, 
+        "memo": "Donation for Inkscape.", 
+        "month": 8, 
+        "year": 2011
+    }, 
+    {
+        "amount": "25-50 USD", 
+        "id": 1, 
+        "memo": "Thank you for a wonderful software that I use almost every day, both at work and at home.", 
+        "month": 12, 
+        "year": 2011
+    }, 
+    {
+        "amount": "5-10 USD", 
+        "id": 2, 
+        "memo": "Thanks pour Inkscape continué de l'amélioré  !", 
+        "month": 3, 
+        "year": 2012
+    }, 
+    {
+        "amount": "100-250 USD", 
+        "id": 3, 
+        "memo": "Inkscape rocks! Thanks for providing a lovely alternative to the claws of Illustrator.", 
+        "month": 3, 
+        "year": 2012
+    }, 
+    {
+        "amount": "25-50 USD", 
+        "id": 4, 
+        "memo": "Thanks for your great software. It was just what I was looking for to create icons for my new app.", 
+        "month": 4, 
+        "year": 2012
+    }, 
+    {
+        "amount": "25-50 USD", 
+        "id": 5, 
+        "memo": "Love the software. Love the ethos.", 
+        "month": 8, 
+        "year": 2012
+    }, 
+    {
+        "amount": "50-100 USD", 
+        "id": 6, 
+        "memo": "(Anonymous donation)  Thanks a lot for Inkscape, and keep on the good work. I use Inkscape for the figures in all my publications.", 
+        "month": 10, 
+        "year": 2012
+    }, 
+    {
+        "amount": "50-100 USD", 
+        "id": 7, 
+        "memo": "I used Inkscape extensively for the preparation of figures for my PhD thesis. It's a great program with high quality output, and I hope my donation will help improve it even further. Keep up the good work!", 
+        "month": 11, 
+        "year": 2012
+    }
+]
