@@ -1,5 +1,6 @@
 {
   "name": "cheers-carousel",
+  "homepage": "http://alpha.inkscape.org/cheers",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
