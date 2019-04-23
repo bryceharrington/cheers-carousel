@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 class Cheer extends Component {
     render() {
-	const { id, memo, year, month, image, active } = this.props;
-	let classes = "carousel-item";
-	if ( active === id ) {
-	    classes += " active";
-	}
-	let background = "url('" + image + "')";
+	    const { id, memo, year, month, image, active } = this.props;
+	    let classes = "carousel-item";
+	    if ( active === id ) {
+	        classes += " active";
+	    }
+	    let background = "url('" + image + "')";
 
-	return (
+	    return (
             <div className={classes}
                  style={{border: "20px solid black", "backgroundImage": background}}>
               <div className="overlay"></div>
@@ -18,7 +18,7 @@ class Cheer extends Component {
                 <p className="h4 font-weight-light">{year}-{month}</p>
               </div>
             </div>
-	);
+	    );
     }
 }
 
