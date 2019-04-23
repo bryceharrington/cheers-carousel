@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Cheers from './components/cheers';
 import './App.css';
-import cheersData from './cheers.json';
 
 class App extends Component {
     state = {
         active: 0,
-        cheers: cheersData,
+        cheers: [],
         images: [
             'img/background0.png',
             'img/background1.png',
@@ -17,6 +16,17 @@ class App extends Component {
     };
 
     render() {
+        if (this.state.cheers.length === 0) {
+            fetch('http://alpha.inkscape.org/cheers/cheers.json')
+                .then(response => response.json())
+                .then((cheersData) => {
+                    this.setState({cheers: cheersData});
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+        }
+
         return (
 	    <React.Fragment>
                 <Cheers

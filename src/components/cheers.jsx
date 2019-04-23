@@ -10,8 +10,6 @@ class Cheers extends Component {
     render() {
 	    const { cheers, images } = this.props;
 
-	    console.log('Cheers - Rendered');
-
         return (
         <div id="cheers-carousel" className="carousel slide carousel-fade carousel-fullscreen" data-ride="carousel">
           <ol className="carousel-indicators">
