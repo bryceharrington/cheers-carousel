@@ -6,14 +6,7 @@ import cheersData from './cheers.json';
 class App extends Component {
     state = {
         active: 0,
-        cheers: [],
-        images: [
-            'img/background0.png',
-            'img/background1.png',
-            'img/background2.png',
-            'img/background3.png',
-            'img/background4.png'
-            ]
+        cheers: []
     };
 
     render() {
@@ -34,7 +27,6 @@ class App extends Component {
                 <Cheers
                   active={this.state.active}
                   cheers={this.state.cheers}
-                  images={this.state.images}
                 />
             </React.Fragment>
         );

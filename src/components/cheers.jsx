@@ -3,12 +3,8 @@ import Cheer from './cheer';
 import CheerNav from './cheernav';
 
 class Cheers extends Component {
-    getImage(images, i) {
-	    return images[i % images.length];
-    }
-
     render() {
-	    const { cheers, images } = this.props;
+	    const { cheers } = this.props;
 
         return (
         <div id="cheers-carousel" className="carousel slide carousel-fade carousel-fullscreen" data-ride="carousel">
@@ -29,7 +25,6 @@ class Cheers extends Component {
                      memo={cheer.memo}
                      year={cheer.year}
                      month={cheer.month}
-                     image={this.getImage(images, cheer.id)}
                      active={0}
               />
             ))}
