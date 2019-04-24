@@ -54,5 +54,26 @@
         "memo": "I used Inkscape extensively for the preparation of figures for my PhD thesis. It's a great program with high quality output, and I hope my donation will help improve it even further. Keep up the good work!", 
         "month": 11, 
         "year": 2012
+    },
+    {
+        "amount": "25-50 USD", 
+        "id": 8, 
+        "memo": "Test comment 1", 
+        "month": 8, 
+        "year": 2013
+    }, 
+    {
+        "amount": "50-100 USD", 
+        "id": 9, 
+        "memo": "Test comment 2", 
+        "month": 10, 
+        "year": 2014
+    }, 
+    {
+        "amount": "50-100 USD", 
+        "id": 10, 
+        "memo": "Test comment 3", 
+        "month": 11, 
+        "year": 2015
     }
 ]
