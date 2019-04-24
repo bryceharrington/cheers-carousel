@@ -1,0 +1,129 @@
+/**
+ * This CSS uses patterns for the background of the slides.
+ */
+
+$static_url: "https://media.inkscape.org/static";
+$color_grey:            #333333;
+$color_primary:         #3d3d4d;
+$color_secondary:       #4a4a5a;
+$color_dark:            #1a1a1a;
+$color_text_primary:    #ffffff;
+$color_text_secondary:  #ff7e28;
+
+
+/* Fonts */
+@import url(#{$static_url}/css/ubuntu.css);
+@import url(#{$static_url}/css/libertine.css);
+
+@font-face {
+  font-family: 'EuphoriaScript';
+  src: url(#{$static_url}/fonts/euphoriascript-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'FontAwesome';
+  src:url(#{$static_url}/fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'),
+    url(#{$static_url}/fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype');
+  font-weight:normal;
+  font-style:normal
+}
+
+body {
+  font-family: 'Ubuntu', 'Liberation Sans', sans-serif;
+}
+
+.carousel-item {
+    border:none !important;
+}
+
+.carousel-item:nth-child(3n+1) {
+    // Sawtooth
+    background:
+    linear-gradient(63deg, $color_primary 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, $color_primary 78%),
+    linear-gradient(63deg, transparent 34%, $color_primary 38%,
+		    $color_primary 58%, transparent 62%),
+    $color_secondary !important;
+    background-size: 16px 48px !important;
+}
+
+.carousel-item:nth-child(3n+2) {
+    // Squiggles
+    background:
+    radial-gradient(circle at 100% 50%, transparent 20%,
+		    $color_secondary, $color_secondary 34%,
+		    transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%,
+		    $color_secondary 21%, $color_secondary 34%,
+		    transparent 35%, transparent) 0 -50px  !important;
+    background-color: $color_primary !important;
+    background-size:25px 33px !important;
+}
+
+.carousel-item:nth-child(3n+3) {
+    // Stars
+    background:
+    linear-gradient(324deg, $color_primary     4%, transparent 4%) -70px 43px,
+    linear-gradient( 36deg, $color_primary     4%, transparent 4%) 30px 43px,
+    linear-gradient( 72deg, $color_secondary 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, $color_secondary 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, $color_secondary 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, $color_secondary 7.5%, transparent 7.5%) 30px 23px,
+
+    linear-gradient(324deg, $color_primary     4%, transparent 4%) -20px 93px,
+    linear-gradient( 36deg, $color_primary     4%, transparent 4%) 80px 93px,
+    linear-gradient( 72deg, $color_secondary 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, $color_secondary 7.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, $color_secondary 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, $color_secondary 7.5%, transparent 7.5%) 80px 73px !important;
+    background-color: $color_primary !important;
+    background-size: 100px 100px !important;
+}
+
+/* carousel fullscreen */
+.carousel-fullscreen .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 600px;
+}
+
+/* carousel fullscreen - vertically centered caption*/
+.carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+/* overlay for better readibility of the caption  */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.5s ease-out;
+}
+
+.carousel .carousel-item {
+    transition-duration: 0.25s;
+}
+
+.carousel-fade {
+    background-color: #000;
+}
+
+/* Typography */
+//@media (max-width: 767.98px) {
+    .carousel-1 {
+	font-size: 3.3rem;
+	font-weight: 700;
+	color: $color_text_primary;
+    }
+    .carousel-2 {
+	font-size: 2rem;
+	color: $color_text_secondary;
+    }
+    .carousel-3 {
+	font-size: 1.5rem;
+	color: $color_text_secondary;
+    }
+//}
