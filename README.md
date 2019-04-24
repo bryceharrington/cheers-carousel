@@ -8,7 +8,11 @@ For the working version of this, please see:
 
   http://alpha.inkscape.org/cheers/
 
-Still very much a WIP; style improvement suggestions would be most welcomed.
+### Regenerating CSS
+
+The CSS file is generated manually from a SCSS source like this:
+
+  sassc src/App.scss > src/App.css 
 
 
 ### `npm start`
@@ -37,8 +41,17 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Deployment
 
-See: https://facebook.github.io/create-react-app/docs/deployment
+Copy the built files to the server:
 
-### `npm run build` fails to minify
+  rsync -avP build/ alpha.inkscape.org:/tmp/cheers/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Then, on Alpha, move it into the web space via:
+
+  cp -v /var/www/alpha.inkscape.org/public_html/cheers/cheers.json /tmp/cheers/
+  sudo chown -R www-data:board /tmp/cheers
+  sudo chmod -R g+w /tmp/cheers
+  sudo rm -rf /tmp/cheers-backup
+  sudo mv -v /var/www/alpha.inkscape.org/public_html/cheers /tmp/cheers-backup
+  sudo mv -v /tmp/cheers /var/www/alpha.inkscape.org/public_html/
+
+Yes, this could be better automated.  .gitlab-ci is on the todo list...
