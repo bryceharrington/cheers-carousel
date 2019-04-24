@@ -18,9 +18,9 @@ class Cheer extends Component {
                  style={{border: "20px solid black", "backgroundImage": background}}>
               <div className="overlay"></div>
               <div className="carousel-caption">
-                <h1 className="h1 font-weight-light">{amount}</h1>
-                <h2 className="display-2 font-weight-bold">{memo}</h2>
-                <p className="h4 font-weight-light">{year}-{month_str}</p>
+                <h2 className="carousel-2">{amount}</h2>
+                <h1 className="carousel-1">{memo}</h1>
+                <h3 className="carousel-3">{year}-{month_str}</h3>
               </div>
             </div>
 	    );
