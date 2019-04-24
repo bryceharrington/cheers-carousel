@@ -8,6 +8,10 @@ class Cheer extends Component {
 	        classes += " active";
 	    }
 	    let background = "url('" + image + "')";
+        let month_str = "" + month;
+        if ( month < 10 ) {
+            month_str = "0" + month;
+        }
 
 	    return (
             <div className={classes}
@@ -15,7 +19,7 @@ class Cheer extends Component {
               <div className="overlay"></div>
               <div className="carousel-caption">
                 <h1 className="display-2 font-weight-bold">{memo}</h1>
-                <p className="h4 font-weight-light">{year}-{month}</p>
+                <p className="h4 font-weight-light">{year}-{month_str}</p>
               </div>
             </div>
 	    );
