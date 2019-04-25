@@ -125,13 +125,13 @@ body {
 /* carousel fullscreen */
 .carousel-fullscreen .carousel-inner .carousel-item {
     height: 100vh;
-    min-height: 600px;
 }
 
 /* carousel fullscreen - vertically centered caption*/
 .carousel-fullscreen .carousel-caption {
     top: 50%;
     bottom: auto;
+    padding-top: 11vmin;
     transform: translateY(-50%);
 }
 
@@ -173,7 +173,7 @@ body {
 /* Typography */
 //@media (max-width: 767.98px) {
     .carousel-1 {
-	font-size: 3.3rem;
+	font-size: calc(1.3rem + 2vmin);
 	font-weight: 700;
 	color: $color_text_primary;
     }
@@ -182,7 +182,7 @@ body {
 	color: $color_text_secondary;
     }
     .carousel-3 {
-	font-size: 1.5rem;
+	font-size: calc(.7rem + 2vmin);
 	color: $color_text_secondary;
     }
 //}
