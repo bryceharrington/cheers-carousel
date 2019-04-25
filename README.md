@@ -12,8 +12,7 @@ For the working version of this, please see:
 
 The CSS file is generated manually from a SCSS source like this:
 
-  sassc src/App.scss > src/App.css 
-
+  sassc --sourcemap --style expanded App.scss App.css
 
 ### `npm start`
 
