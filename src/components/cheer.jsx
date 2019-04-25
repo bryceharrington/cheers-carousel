@@ -16,7 +16,7 @@ class Cheer extends Component {
             <div className={classes}>
               <div className="overlay"></div>
               <div className="carousel-caption">
-                <h1 className="carousel-1">{memo}</h1>
+                <h1 className="carousel-1">&ldquo;{memo}&rdquo;</h1>
                 <h3 className="carousel-3">{year}-{month_str}</h3>
               </div>
             </div>
