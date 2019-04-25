@@ -8,15 +8,6 @@ class Cheers extends Component {
 
         return (
         <div id="cheers-carousel" className="carousel slide carousel-fade carousel-fullscreen" data-ride="carousel">
-          <ol className="carousel-indicators">
-            { cheers.map(cheer => (
-              <CheerNav key={cheer.id}
-                        id={cheer.id}
-                        active={0}
-              />
-            ))}
-          </ol>
-
           <div className="carousel-inner" role="listbox">
             { cheers.map(cheer => (
               <Cheer key={cheer.id}
@@ -43,6 +34,19 @@ class Cheers extends Component {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
+
+          <div className="carousel-footer">
+            <a href="https://inkscape.org/support-us/donate/">Donate</a>
+          </div>
+
+          <ol className="carousel-indicators">
+            { cheers.map(cheer => (
+              <CheerNav key={cheer.id}
+                        id={cheer.id}
+                        active={0}
+              />
+            ))}
+          </ol>
         </div>
         );
     }

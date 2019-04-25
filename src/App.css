@@ -84,6 +84,31 @@ body {
   bottom: auto;
   transform: translateY(-50%); }
 
+/* carousel footer - centered caption towards end of page */
+.carousel-footer {
+  position: absolute;
+  right: 3em;
+  left: 0;
+  bottom: 3em;
+  z-index: 15;
+  text-align: right;
+  font-size: 1rem; }
+
+.carousel-footer a {
+  color: #ffffff; }
+
+.carousel-footer a:link {
+  color: #ffffff; }
+
+.carousel-footer a:visited {
+  color: #ffffff; }
+
+.carousel-footer a:active {
+  color: #ffffff; }
+
+.carousel-footer a:hover {
+  color: #ff7e28; }
+
 /* overlay for better readibility of the caption  */
 .overlay {
   position: absolute;
