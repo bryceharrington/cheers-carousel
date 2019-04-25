@@ -21,14 +21,12 @@ class Cheers extends Component {
             { cheers.map(cheer => (
               <Cheer key={cheer.id}
                      id={cheer.id}
-                     amount={cheer.amount}
                      memo={cheer.memo}
                      year={cheer.year}
                      month={cheer.month}
                      active={0}
               />
             ))}
-
           </div>
 
           <a className="carousel-control-prev"
