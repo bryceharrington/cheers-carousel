@@ -97,7 +97,7 @@ body {
 .carousel-fullscreen .carousel-caption {
   top: 50%;
   bottom: auto;
-  padding-top: 11vmin;
+  padding-top: 5.5vmin;
   transform: translateY(-50%);
 }
 
